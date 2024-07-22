@@ -62,19 +62,14 @@ jobs:
         run: pnpm install
       - name: Build with Next.js
         run: pnpm build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: ./out
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: ./out
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          token: ${{ secrets.MY_TOKEN }}
+          branch: main
+          folder: out
+          repository-name: kobevino/kobevino.github.io
