@@ -62,12 +62,8 @@ jobs:
         run: pnpm install
       - name: Build with Next.js
         run: pnpm build
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: ./out
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
         with:
           token: ${{ secrets.MY_TOKEN }}
           branch: main
