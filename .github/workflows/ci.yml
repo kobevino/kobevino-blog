@@ -48,7 +48,7 @@ jobs:
       - name: Build with Next.js
         run: pnpm build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.6.1
+        uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
           token: ${{ secrets.MY_TOKEN }}
           branch: main
