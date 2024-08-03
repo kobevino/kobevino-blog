@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build with Next.js
-        run: pnpm build
+        run: pnpm build && touch ./out/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
