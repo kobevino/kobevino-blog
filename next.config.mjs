@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export'
+  output: 'export',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '.' : ''
 };
 
 export default nextConfig;
