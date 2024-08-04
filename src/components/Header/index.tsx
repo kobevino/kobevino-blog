@@ -10,6 +10,7 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
+import { isDarkMode } from 'libs';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from './index.module.css';
@@ -38,12 +39,8 @@ export default function Header() {
   );
 
   useEffect(() => {
-    const checked =
-      colorScheme === 'dark' ||
-      (colorScheme === 'auto' &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const checked = colorScheme === 'dark' || isDarkMode(colorScheme);
     setChecked(checked);
-    console.log(checked)
   }, [colorScheme]);
 
   return (
@@ -62,7 +59,9 @@ export default function Header() {
             color={'dark.4'}
             onLabel={moonIcon}
             offLabel={sunIcon}
-            onChange={toggleColorScheme}
+            onChange={({ currentTarget: { checked } }) => {
+              toggleColorScheme();
+            }}
           />
         </Group>
       </Container>
