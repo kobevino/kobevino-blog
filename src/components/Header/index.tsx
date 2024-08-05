@@ -1,6 +1,7 @@
 'use client';
 
 import {
+  Anchor,
   Container,
   Group,
   Switch,
@@ -9,11 +10,18 @@ import {
   useMantineColorScheme,
   useMantineTheme,
 } from '@mantine/core';
-import { IconMoonStars, IconSun } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandLinkedin, IconBrandMeta, IconBrandX, IconMoonStars, IconSun } from '@tabler/icons-react';
 import { isDarkMode } from 'libs';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from './index.module.css';
+
+const snsList = [
+  { key: 1, url: 'https://x.com/_kobevino', component: IconBrandX },
+  { key: 2, url: 'https://www.facebook.com/kobe8vino24', component: IconBrandMeta },
+  { key: 3, url: 'https://www.linkedin.com/in/kobevino/', component: IconBrandLinkedin },
+  { key: 4, url: 'https://github.com/kobevino', component: IconBrandGithub },
+];
 
 export default function Header() {
   const theme = useMantineTheme();
@@ -38,6 +46,16 @@ export default function Header() {
     />
   );
 
+  const snsItems = snsList.map(({ key, url, component: IconComponent }) => (
+    <Anchor
+      href={url}
+      key={key}
+      target="_blank"
+    >
+      <IconComponent />
+    </Anchor>
+  ))
+
   useEffect(() => {
     const checked = colorScheme === 'dark' || isDarkMode(colorScheme);
     setChecked(checked);
@@ -53,15 +71,17 @@ export default function Header() {
           </Text>
         </Group>
         <Group gap={5}>
+          <Group mt={5} gap={10}>
+            {snsItems}
+          </Group>
           <Switch
+            ml={10}
             checked={checked}
             size="md"
             color={'dark.4'}
             onLabel={moonIcon}
             offLabel={sunIcon}
-            onChange={({ currentTarget: { checked } }) => {
-              toggleColorScheme();
-            }}
+            onChange={toggleColorScheme}
           />
         </Group>
       </Container>
