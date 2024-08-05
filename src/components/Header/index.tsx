@@ -10,7 +10,14 @@ import {
   useMantineColorScheme,
   useMantineTheme,
 } from '@mantine/core';
-import { IconBrandGithub, IconBrandLinkedin, IconBrandMeta, IconBrandX, IconMoonStars, IconSun } from '@tabler/icons-react';
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandMeta,
+  IconBrandX,
+  IconMoonStars,
+  IconSun,
+} from '@tabler/icons-react';
 import { isDarkMode } from 'libs';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -18,8 +25,16 @@ import styles from './index.module.css';
 
 const snsList = [
   { key: 1, url: 'https://x.com/_kobevino', component: IconBrandX },
-  { key: 2, url: 'https://www.facebook.com/kobe8vino24', component: IconBrandMeta },
-  { key: 3, url: 'https://www.linkedin.com/in/kobevino/', component: IconBrandLinkedin },
+  {
+    key: 2,
+    url: 'https://www.facebook.com/kobe8vino24',
+    component: IconBrandMeta,
+  },
+  {
+    key: 3,
+    url: 'https://www.linkedin.com/in/kobevino/',
+    component: IconBrandLinkedin,
+  },
   { key: 4, url: 'https://github.com/kobevino', component: IconBrandGithub },
 ];
 
@@ -47,14 +62,10 @@ export default function Header() {
   );
 
   const snsItems = snsList.map(({ key, url, component: IconComponent }) => (
-    <Anchor
-      href={url}
-      key={key}
-      target="_blank"
-    >
+    <Anchor href={url} key={key} target="_blank">
       <IconComponent />
     </Anchor>
-  ))
+  ));
 
   useEffect(() => {
     const checked = colorScheme === 'dark' || isDarkMode(colorScheme);
