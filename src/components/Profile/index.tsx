@@ -18,11 +18,9 @@ export function Profile() {
 
           <Group wrap="nowrap" gap={10} mt={3}>
             <IconMail stroke={1.5} size="1rem" className={styles.icon} />
-            <Anchor>
-              <Text fz="xs" c="dimmed">
-                kobe8vino24@gmail.com
-              </Text>
-            </Anchor>
+            <Text fz="xs" c="dimmed">
+              kobe8vino24@gmail.com
+            </Text>
           </Group>
 
           <Group wrap="nowrap" gap={10} mt={5}>
