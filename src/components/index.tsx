@@ -1,2 +1,3 @@
-export { default as Header } from './Header';
-export { default as Profile } from './Profile';
+export * from './Header';
+export * from './Illustration';
+export * from './Profile';

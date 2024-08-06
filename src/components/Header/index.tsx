@@ -38,7 +38,7 @@ const snsList = [
   { key: 4, url: 'https://github.com/kobevino', component: IconBrandGithub },
 ];
 
-export default function Header() {
+export function Header() {
   const theme = useMantineTheme();
   const { colorScheme, toggleColorScheme } = useMantineColorScheme({
     keepTransitions: true,

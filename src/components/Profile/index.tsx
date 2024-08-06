@@ -2,7 +2,7 @@ import { Anchor, Avatar, Button, Container, Group, Text } from '@mantine/core';
 import { IconMail, IconPhoneCall, IconSend2 } from '@tabler/icons-react';
 import styles from './index.module.css';
 
-export default function Profile() {
+export function Profile() {
   return (
     <Container size="md">
       <Group wrap="nowrap" mb={10}>
