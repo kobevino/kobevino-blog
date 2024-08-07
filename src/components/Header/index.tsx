@@ -18,7 +18,7 @@ import {
   IconMoonStars,
   IconSun,
 } from '@tabler/icons-react';
-import { isDarkMode } from 'libs';
+import { isDarkMode } from 'libs/theme';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from './index.module.css';

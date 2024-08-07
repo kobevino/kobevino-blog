@@ -1,10 +1,10 @@
-import { Anchor, Avatar, Button, Container, Group, Text } from '@mantine/core';
+import { Anchor, Avatar, Button, Group, Stack, Text } from '@mantine/core';
 import { IconMail, IconPhoneCall, IconSend2 } from '@tabler/icons-react';
 import styles from './index.module.css';
 
 export function Profile() {
   return (
-    <Container size="md">
+    <Stack mb={30}>
       <Group wrap="nowrap" mb={10}>
         <Avatar src="/profile.jpg" size={94} radius="md" />
         <div>
@@ -40,6 +40,6 @@ export function Profile() {
           SEND
         </Button>
       </Anchor>
-    </Container>
+    </Stack>
   );
 }
