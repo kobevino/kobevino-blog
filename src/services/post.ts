@@ -23,7 +23,6 @@ export async function getPosts() {
       const filePath = join(POSTS_DIR_PATH, dirEntry.name, 'index.md');
       const content = await readFile(filePath, { encoding: 'utf-8' });
       const { data } = matter(content);
-
       return {
         slug: dirEntry.name,
         ...data,

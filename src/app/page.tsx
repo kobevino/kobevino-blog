@@ -1,7 +1,7 @@
 import { Container } from '@mantine/core';
-import { Header } from 'components/Header';
-import { Post } from 'components/Post';
-import { Profile } from 'components/Profile';
+import { Header } from 'components/header';
+import { Post } from 'components/post';
+import { Profile } from 'components/profile';
 import { getPosts } from 'services/post';
 import styles from './page.module.css';
 
