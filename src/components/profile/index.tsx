@@ -31,15 +31,19 @@ export function Profile() {
           </Group>
         </div>
       </Group>
-      <Anchor href="mailto:kobe8vino24@gmail.com">
-        <Button
-          style={{ width: '270px' }}
-          variant="gradient"
-          rightSection={<IconSend2 stroke={1.5} size="1rem" />}
-        >
-          SEND
-        </Button>
-      </Anchor>
+      <Group>
+
+
+        <Anchor href="mailto:kobe8vino24@gmail.com">
+          <Button
+            style={{ width: '270px' }}
+            variant="gradient"
+            rightSection={<IconSend2 stroke={1.5} size="1rem" />}
+          >
+            SEND
+          </Button>
+        </Anchor>
+      </Group>
     </Stack>
   );
 }
