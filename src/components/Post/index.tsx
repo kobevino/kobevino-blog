@@ -2,7 +2,6 @@ import { Group, Text, Title } from '@mantine/core';
 import { COLORS } from 'constants/color';
 import { MONTHS, WEEKDAYS } from 'constants/date';
 import { getRandom } from 'libs/random';
-
 import Link from 'next/link';
 
 import type { IPost } from 'services/post';
@@ -12,8 +11,6 @@ type Props = Omit<IPost, 'tag'> & { index: number };
 export function Post({ slug, title, date, spoiler }: Props) {
   const firstColor = COLORS[getRandom(14)];
   const secondColor = COLORS[getRandom(14)];
-
-  console.log(firstColor, secondColor);
   const options: Intl.DateTimeFormatOptions = {
     weekday: 'long',
     year: 'numeric',
