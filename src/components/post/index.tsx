@@ -26,7 +26,7 @@ export function Post({ slug, title, date, spoiler }: Props) {
     <Group mb={30}>
       <Link
         href={`/${slug}`}
-        as={`/${slug}`}
+        as={`/kobevino-blog/${slug}`}
         style={{ textDecoration: 'none' }}
       >
         <Title
