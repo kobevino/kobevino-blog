@@ -32,8 +32,6 @@ export function Profile() {
         </div>
       </Group>
       <Group>
-
-
         <Anchor href="mailto:kobe8vino24@gmail.com">
           <Button
             style={{ width: '270px' }}

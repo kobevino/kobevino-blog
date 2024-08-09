@@ -24,7 +24,11 @@ export function Post({ slug, title, date, spoiler }: Props) {
 
   return (
     <Group mb={30}>
-      <Link href={`/${slug}`} style={{ textDecoration: 'none' }}>
+      <Link
+        href={`/${slug}`}
+        as={`/${slug}`}
+        style={{ textDecoration: 'none' }}
+      >
         <Title
           order={2}
           style={{
@@ -34,7 +38,7 @@ export function Post({ slug, title, date, spoiler }: Props) {
             color: 'transparent',
           }}
         >
-          {title}
+          {title} {`slug: ${slug}`}
         </Title>
         <Text
           mt={5}
