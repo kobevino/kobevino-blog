@@ -1,5 +1,11 @@
-import { ColorSchemeScript, MantineProvider, createTheme } from '@mantine/core';
+import {
+  ColorSchemeScript,
+  Container,
+  MantineProvider,
+  createTheme,
+} from '@mantine/core';
 import '@mantine/core/styles.css';
+import { Header } from 'components/header';
 import type { Metadata } from 'next';
 import './globals.css';
 
@@ -27,7 +33,8 @@ export default function RootLayout({
       </head>
       <body>
         <MantineProvider theme={theme} defaultColorScheme="auto">
-          {children}
+          <Header />
+          <Container>{children}</Container>
         </MantineProvider>
       </body>
     </html>

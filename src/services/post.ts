@@ -20,9 +20,9 @@ export async function getPosts() {
   const postPromises = dirEntries
     .filter((entry) => entry.isDirectory())
     .map(async (dirEntry) => {
-      const filePath = join(POSTS_DIR_PATH, dirEntry.name, 'index.md');
-      const content = await readFile(filePath, { encoding: 'utf-8' });
-      const { data } = matter(content);
+      const filePath = join(POSTS_DIR_PATH, dirEntry.name, 'index.mdx');
+      const res = await readFile(filePath, { encoding: 'utf-8' });
+      const { data } = matter(res);
       return {
         slug: dirEntry.name,
         ...data,
