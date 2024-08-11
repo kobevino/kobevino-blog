@@ -5,7 +5,8 @@ const nextConfig = {
   images: { unoptimized: true },
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
-  }
+  },
+  trailingSlash: true
 };
 
 export default nextConfig;
