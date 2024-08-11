@@ -77,7 +77,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <Container size="md" className={styles.inner}>
-        <Group gap={8} onClick={() => router.push('/')} className={styles.logo}>
+        <Group gap={8} onClick={() => router.back()} className={styles.logo}>
           <Image src={'/logo.png'} width={30} height={30} alt="logo" />
           <Text size="sm" fw={700} tt="uppercase" c="gray">
             kobevino
