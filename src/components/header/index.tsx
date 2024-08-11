@@ -20,7 +20,7 @@ import {
 } from '@tabler/icons-react';
 import { isDarkMode } from 'libs/theme';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import styles from './index.module.css';
 
@@ -46,8 +46,7 @@ export function Header() {
   });
   const [checked, setChecked] = useState(false);
   const router = useRouter();
-
-  
+  const pathname = usePathname()
 
   const sunIcon = (
     <IconSun
@@ -71,6 +70,11 @@ export function Header() {
     </Anchor>
   ));
 
+  const onHomeLink = () => {
+    // To avoid prifix path issue
+    if (pathname !== '/') router.back()
+  }
+
   useEffect(() => {
     const checked = colorScheme === 'dark' || isDarkMode(colorScheme);
     setChecked(checked);
@@ -79,7 +83,11 @@ export function Header() {
   return (
     <header className={styles.header}>
       <Container size="md" className={styles.inner}>
-        <Group gap={8} onClick={() => router.replace('/')} className={styles.logo}>
+        <Group
+          gap={8}
+          onClick={onHomeLink}
+          className={styles.logo}
+        >
           <Image src={'/logo.png'} width={30} height={30} alt="logo" />
           <Text size="sm" fw={700} tt="uppercase" c="gray">
             kobevino
