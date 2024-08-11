@@ -47,6 +47,8 @@ export function Header() {
   const [checked, setChecked] = useState(false);
   const router = useRouter();
 
+  
+
   const sunIcon = (
     <IconSun
       style={{ width: rem(16), height: rem(16) }}
@@ -77,7 +79,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <Container size="md" className={styles.inner}>
-        <Group gap={8} onClick={() => router.back()} className={styles.logo}>
+        <Group gap={8} onClick={() => router.replace('/')} className={styles.logo}>
           <Image src={'/logo.png'} width={30} height={30} alt="logo" />
           <Text size="sm" fw={700} tt="uppercase" c="gray">
             kobevino
