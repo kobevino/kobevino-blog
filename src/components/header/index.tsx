@@ -20,7 +20,7 @@ import {
 } from '@tabler/icons-react';
 import { isDarkMode } from 'libs/theme';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import styles from './index.module.css';
 
@@ -45,6 +45,7 @@ export function Header() {
     keepTransitions: true,
   });
   const [checked, setChecked] = useState(false);
+  const router = useRouter();
 
   const sunIcon = (
     <IconSun
@@ -76,14 +77,12 @@ export function Header() {
   return (
     <header className={styles.header}>
       <Container size="md" className={styles.inner}>
-        <Link href="/">
-          <Group gap={8}>
-            <Image src={'/logo.png'} width={30} height={30} alt="logo" />
-            <Text size="sm" fw={700} tt="uppercase" c="gray">
-              kobevino
-            </Text>
-          </Group>
-        </Link>
+        <Group gap={8} onClick={() => router.push('/')} className={styles.logo}>
+          <Image src={'/logo.png'} width={30} height={30} alt="logo" />
+          <Text size="sm" fw={700} tt="uppercase" c="gray">
+            kobevino
+          </Text>
+        </Group>
         <Group gap={5}>
           <Group mt={5} gap={10}>
             {snsItems}
