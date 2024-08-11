@@ -1,6 +1,5 @@
 import { Button, Container, Group, Text, Title } from '@mantine/core';
 import { Illustration } from 'components/illustration';
-import Link from 'next/link';
 import styles from './not-found.module.css';
 
 export default function NotFound() {
@@ -16,9 +15,7 @@ export default function NotFound() {
             this is an error contact support.
           </Text>
           <Group justify="center">
-            <Link href="/">
-              <Button size="md">Take me back to home page</Button>
-            </Link>
+            <Button size="md">Take me back to home page</Button>
           </Group>
         </div>
       </div>
