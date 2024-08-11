@@ -1,6 +1,6 @@
 export const COLORS = [
-  'dark',
-  'gray',
+  // 'dark',
+  // 'gray',
   'red',
   'pink',
   'grape',
