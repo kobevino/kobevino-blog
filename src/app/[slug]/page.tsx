@@ -5,7 +5,7 @@ import { highlightCode } from 'libs/code';
 import { convertDate } from 'libs/date';
 import type { IPost } from 'services/post';
 
-// import './markdown.css';
+import './markdown.css';
 
 export async function generateStaticParams() {
   const entries = await readdir('./public/', { withFileTypes: true });
