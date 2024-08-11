@@ -12,7 +12,7 @@ export interface IPost {
 }
 
 export async function getPosts() {
-  const POSTS_DIR_PATH = join(process.cwd(), '/public/');
+  const POSTS_DIR_PATH = join(process.cwd(), '/blog/');
   const dirEntries = await readdir(POSTS_DIR_PATH, {
     withFileTypes: true,
   });

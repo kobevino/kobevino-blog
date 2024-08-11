@@ -46,7 +46,7 @@ export function Header() {
   });
   const [checked, setChecked] = useState(false);
   const router = useRouter();
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   const sunIcon = (
     <IconSun
@@ -72,8 +72,8 @@ export function Header() {
 
   const onHomeLink = () => {
     // To avoid prifix path issue
-    if (pathname !== '/') router.back()
-  }
+    if (pathname !== '/') router.back();
+  };
 
   useEffect(() => {
     const checked = colorScheme === 'dark' || isDarkMode(colorScheme);
@@ -83,11 +83,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <Container size="md" className={styles.inner}>
-        <Group
-          gap={8}
-          onClick={onHomeLink}
-          className={styles.logo}
-        >
+        <Group gap={8} onClick={onHomeLink} className={styles.logo}>
           <Image src={'/logo.png'} width={30} height={30} alt="logo" />
           <Text size="sm" fw={700} tt="uppercase" c="gray">
             kobevino
