@@ -5,7 +5,7 @@ import { highlightCode } from 'libs/code';
 import { convertDate } from 'libs/date';
 import type { IPost } from 'services/post';
 
-import './markdown.css';
+// import './markdown.css';
 
 export async function generateStaticParams() {
   const entries = await readdir('./public/', { withFileTypes: true });
@@ -22,7 +22,7 @@ type Props = {
 };
 
 export default async function PostPage({ params: { slug } }: Props) {
-  const filename = `./public/${slug}/index.mdx`;
+  const filename = `./public/${slug}/index.md`;
   const res = await readFile(filename, 'utf8');
   const { data, content } = matter(res);
   const { title, date } = data as IPost;
