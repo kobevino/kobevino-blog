@@ -17,5 +17,14 @@ export function Background() {
     });
   }, []);
 
-  return <div>{init && <Particles id="tsparticles" options={OPTIONS} />}</div>;
+  return (
+    <div>
+      {init && (
+        <Particles
+          id="tsparticles"
+          options={OPTIONS}
+        />
+      )}
+    </div>
+  );
 }
