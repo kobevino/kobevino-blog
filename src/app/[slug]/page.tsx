@@ -5,6 +5,7 @@ import { highlightCode } from 'libs/code';
 import { convertDate } from 'libs/date';
 import type { IPost } from 'services/post';
 
+import Comments from 'components/comments';
 import './markdown.css';
 
 export async function generateStaticParams() {
@@ -45,6 +46,7 @@ export default async function PostPage({ params: { slug } }: Props) {
           dangerouslySetInnerHTML={{ __html: source }}
         />
       </Group>
+      <Comments />
     </>
   );
 }
