@@ -85,7 +85,7 @@ export function Header() {
       <Container size="md" className={styles.inner}>
         <Group gap={8} onClick={onHomeLink} className={styles.logo}>
           <Image src={'/logo.png'} width={30} height={30} alt="logo" />
-          <Text size="sm" fw={700} tt="uppercase" c="gray">
+          <Text size="sm" fw={700} tt="uppercase" c="gray" className={styles.typing}>
             kobevino
           </Text>
         </Group>
