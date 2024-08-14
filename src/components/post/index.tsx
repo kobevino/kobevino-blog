@@ -1,10 +1,12 @@
-import { Group, Text, Title } from '@mantine/core';
+import { Stack, Text, Title } from '@mantine/core';
 import { COLORS } from 'constants/color';
 import { convertDate } from 'libs/date';
 import { getRandom } from 'libs/random';
 import Link from 'next/link';
 
 import type { IPost } from 'services/post';
+
+import styles from './index.module.css';
 
 type Props = Omit<IPost, 'tag'> & { index: number };
 
@@ -13,8 +15,8 @@ export function Post({ slug, title, date, spoiler }: Props) {
   const secondColor = COLORS[getRandom(12)];
 
   return (
-    <Group mb={30}>
-      <Link href={slug} style={{ textDecoration: 'none' }}>
+    <Link href={slug} style={{ textDecoration: 'none' }}>
+      <Stack mb={30} gap={1} className={styles.post}>
         <Title
           order={2}
           style={{
@@ -32,7 +34,7 @@ export function Post({ slug, title, date, spoiler }: Props) {
         <Title mt={10} order={3} size="h5" c="gray.5">
           {spoiler}
         </Title>
-      </Link>
-    </Group>
+      </Stack>
+    </Link>
   );
 }
