@@ -1,5 +1,14 @@
-import { Anchor, Avatar, Button, Group, Stack, Text } from '@mantine/core';
+import {
+  Anchor,
+  Avatar,
+  Badge,
+  Button,
+  Group,
+  Stack,
+  Text,
+} from '@mantine/core';
 import { IconMail, IconPhoneCall, IconSend2 } from '@tabler/icons-react';
+import Link from 'next/link';
 import styles from './index.module.css';
 
 export function Profile() {
@@ -12,9 +21,21 @@ export function Profile() {
             Frontend Engineer
           </Text>
 
-          <Text fz="lg" fw={500} className={styles.name}>
-            Jaesung Lee
-          </Text>
+          <Group gap={5}>
+            <Text fz="lg" fw={500} className={styles.name}>
+              Jaesung Lee
+            </Text>
+            <Link href="about">
+              <Badge
+                className={styles.badge}
+                size="xs"
+                variant="gradient"
+                gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+              >
+                @kobevino
+              </Badge>
+            </Link>
+          </Group>
 
           <Group wrap="nowrap" gap={10} mt={3}>
             <IconMail stroke={1.5} size="1rem" className={styles.icon} />

@@ -7,3 +7,18 @@
     Greycliff CF,
     var(--mantine-font-family);
 }
+
+.badge {
+  animation: swing ease-in-out .5s infinite alternate;
+  transform-origin: center -20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+@keyframes swing {
+  0% { 
+    transform: rotate(3deg); 
+  }
+  100% { 
+    transform: rotate(-3deg); 
+  }
+}
