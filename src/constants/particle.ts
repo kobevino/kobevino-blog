@@ -157,9 +157,15 @@ export const OPTIONS: ISourceOptions = {
     },
   },
   particles: {
+    color: {
+      value: 'random'
+    },
     links: {
       enable: true,
       distance: 200,
+      color: {
+        value: "random"
+      },
     },
     move: {
       direction: 'none',
