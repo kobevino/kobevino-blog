@@ -81,7 +81,11 @@ export default function Career() {
               Happytalk Chat Portfolio
             </Button>
           </a>
-          <a href="happytalk-design-system.pdf" target="_blank" rel="noreferrer">
+          <a
+            href="happytalk-design-system.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button leftSection={<IconReportSearch size={16} />} size="xs">
               Happytalk Design System Portfolio
             </Button>
