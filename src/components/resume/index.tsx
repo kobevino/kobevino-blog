@@ -1,6 +1,5 @@
 import { Avatar, Button, Flex, Group, Text } from '@mantine/core';
 import { IconReportSearch } from '@tabler/icons-react';
-import Link from 'next/link';
 
 export default function Resume() {
   return (
@@ -15,16 +14,16 @@ export default function Resume() {
         </div>
       </Group>
       <Group>
-        <Link href="korean-resume.pdf" target="_blank">
+        <a href="korean-resume.pdf" target="_blank" rel="noreferrer">
           <Button leftSection={<IconReportSearch size={15} />} size="xs">
             Resume (KO)
           </Button>
-        </Link>
-        <Link href="english-resume.pdf" target="_blank">
+        </a>
+        <a href="english-resume.pdf" target="_blank" rel="noreferrer">
           <Button leftSection={<IconReportSearch size={15} />} size="xs">
             Resume (EN)
           </Button>
-        </Link>
+        </a>
       </Group>
     </Flex>
   );

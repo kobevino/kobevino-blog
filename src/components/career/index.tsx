@@ -4,7 +4,6 @@ import { Button, Group, Text, Timeline } from '@mantine/core';
 import { IconReportSearch } from '@tabler/icons-react';
 import { ICON } from 'constants/icon';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Career() {
   return (
@@ -77,16 +76,16 @@ export default function Career() {
           ))}
         </Group>
         <Group>
-          <Link href="happytalk-chat-front.pdf" target="_blank">
+          <a href="happytalk-chat-front.pdf" target="_blank" rel="noreferrer">
             <Button leftSection={<IconReportSearch size={16} />} size="xs">
               Happytalk Chat Portfolio
             </Button>
-          </Link>
-          <Link href="happytalk-design-system.pdf" target="_blank">
+          </a>
+          <a href="happytalk-design-system.pdf" target="_blank" rel="noreferrer">
             <Button leftSection={<IconReportSearch size={16} />} size="xs">
               Happytalk Design System Portfolio
             </Button>
-          </Link>
+          </a>
         </Group>
       </Timeline.Item>
       <Timeline.Item>
