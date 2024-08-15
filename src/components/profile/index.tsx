@@ -25,7 +25,7 @@ export function Profile() {
             <Text fz="lg" fw={500} className={styles.name}>
               Jaesung Lee
             </Text>
-            <Link href="about">
+            <Link href="about" style={{ textDecoration: 'none' }}>
               <Badge
                 className={styles.badge}
                 size="xs"

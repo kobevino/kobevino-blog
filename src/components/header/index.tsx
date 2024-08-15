@@ -17,7 +17,7 @@ import {
   IconBrandMeta,
   IconBrandX,
   IconMoonStars,
-  IconSun
+  IconSun,
 } from '@tabler/icons-react';
 import { isDarkMode } from 'libs/theme';
 import Image from 'next/image';
