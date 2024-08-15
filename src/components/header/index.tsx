@@ -12,11 +12,12 @@ import {
 } from '@mantine/core';
 import {
   IconBrandGithub,
+  IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandMeta,
   IconBrandX,
   IconMoonStars,
-  IconSun,
+  IconSun
 } from '@tabler/icons-react';
 import { isDarkMode } from 'libs/theme';
 import Image from 'next/image';
@@ -33,10 +34,15 @@ const snsList = [
   },
   {
     key: 3,
+    url: 'https://www.instagram.com/_kobevino/',
+    component: IconBrandInstagram,
+  },
+  {
+    key: 4,
     url: 'https://www.linkedin.com/in/kobevino/',
     component: IconBrandLinkedin,
   },
-  { key: 4, url: 'https://github.com/kobevino', component: IconBrandGithub },
+  { key: 5, url: 'https://github.com/kobevino', component: IconBrandGithub },
 ];
 
 export function Header() {
@@ -96,7 +102,7 @@ export function Header() {
           </Text>
         </Group>
         <Group gap={5}>
-          <Group mt={5} gap={10}>
+          <Group mt={5} gap={5}>
             {snsItems}
           </Group>
           <Switch
