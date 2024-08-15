@@ -84,7 +84,7 @@ export default function Career() {
           </Link>
           <Link href="happytalk-design-system.pdf">
             <Button leftSection={<IconReportSearch size={16} />} size="xs">
-              Happytalk Design Portfolio
+              Happytalk Design System Portfolio
             </Button>
           </Link>
         </Group>
