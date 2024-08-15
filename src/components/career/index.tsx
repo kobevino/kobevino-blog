@@ -77,14 +77,14 @@ export default function Career() {
           ))}
         </Group>
         <Group>
-          <Link href="happytalk-chat-front.pdf" target="_blank">
+          <Link href="happytalk-chat-front.pdf">
             <Button leftSection={<IconReportSearch size={16} />} size="xs">
-              Happytalk Chat Application
+              Happytalk Chat Portfolio
             </Button>
           </Link>
-          <Link href="happytalk-design-system.pdf" target="_blank">
+          <Link href="happytalk-design-system.pdf">
             <Button leftSection={<IconReportSearch size={16} />} size="xs">
-              Happytalk Design System
+              Happytalk Design Portfolio
             </Button>
           </Link>
         </Group>

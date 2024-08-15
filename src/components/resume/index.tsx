@@ -15,12 +15,12 @@ export default function Resume() {
         </div>
       </Group>
       <Group>
-        <Link href="korean-resume.pdf" target="_blank">
+        <Link href="korean-resume.pdf">
           <Button leftSection={<IconReportSearch size={15} />} size="xs">
             Resume (KO)
           </Button>
         </Link>
-        <Link href="english-resume.pdf" target="_blank">
+        <Link href="english-resume.pdf">
           <Button leftSection={<IconReportSearch size={15} />} size="xs">
             Resume (EN)
           </Button>
