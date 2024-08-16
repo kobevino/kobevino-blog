@@ -2,10 +2,10 @@ import { Stack, Text, Title } from '@mantine/core';
 import { COLORS } from 'constants/color';
 import { convertDate } from 'libs/date';
 import { getRandom } from 'libs/random';
-import Link from 'next/link';
 
 import type { IPost } from 'services/post';
 
+import Link from 'next/link';
 import styles from './index.module.css';
 
 type Props = Omit<IPost, 'tag'> & { index: number };
@@ -20,7 +20,7 @@ export function Post({ slug, title, date, spoiler }: Props) {
         <Title
           order={2}
           style={{
-            backgroundImage: `linear-gradient(45deg, var(--mantine-color-${firstColor}-5), var(--mantine-color-${secondColor}-2))`,
+            backgroundImage: `linear-gradient(45deg, var(--mantine-color-${firstColor}-9), var(--mantine-color-${secondColor}-0))`,
             backgroundClip: 'text',
             WebkitBackgroundClip: 'text',
             color: 'transparent',
