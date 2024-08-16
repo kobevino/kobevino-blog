@@ -69,7 +69,7 @@ export const ICON: {
     alt: 'nextjs',
   },
   rollup: {
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rollup/rollup-original.svg',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rollup/rollup-original-wordmark.svg',
     alt: 'rollup',
   },
   bash: {
@@ -77,7 +77,7 @@ export const ICON: {
     alt: 'bash',
   },
   cypress: {
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original-wordmark.svg',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg',
     alt: 'cypress',
   },
   xcode: {
@@ -105,7 +105,7 @@ export const ICON: {
     alt: 'jest',
   },
   git: {
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg',
     alt: 'git',
   },
   npm: {
@@ -125,7 +125,7 @@ export const ICON: {
     alt: 'graphql',
   },
   storybook: {
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/storybook/storybook-original-wordmark.svg',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/storybook/storybook-original.svg',
     alt: 'storybook',
   },
 };

@@ -172,7 +172,9 @@ export default function Career() {
             'angularjs',
             'bootstrap',
             'jquery',
+            'npm',
             'objectivec',
+            'xcode',
             'git',
           ].map((item) => (
             <Image
