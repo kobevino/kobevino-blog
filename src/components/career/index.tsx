@@ -3,6 +3,7 @@
 import { Button, Group, Text, Timeline } from '@mantine/core';
 import { IconReportSearch } from '@tabler/icons-react';
 import { ICON } from 'constants/icon';
+import { SKILLS } from 'constants/skill';
 import Image from 'next/image';
 
 export default function Career() {
@@ -14,23 +15,7 @@ export default function Career() {
           2022.02 ~ Current
         </Text>
         <Group mt={10}>
-          {[
-            'javascript',
-            'typescript',
-            'react',
-            'nextjs',
-            'svelte',
-            'jquery',
-            'pnpm',
-            'yarn',
-            'webpack',
-            'rollup',
-            'jest',
-            'vitest',
-            'playwright',
-            'docker',
-            'git',
-          ].map((item) => (
+          {SKILLS.ncsoft.map((item) => (
             <Image
               key={item}
               src={ICON[item].src}
@@ -47,25 +32,7 @@ export default function Career() {
           2019.09 ~ 2021.12
         </Text>
         <Group mt={10} mb={20}>
-          {[
-            'javascript',
-            'typescript',
-            'react',
-            'nextjs',
-            'd3',
-            'jquery',
-            'yarn',
-            'webpack',
-            'rollup',
-            'storybook',
-            'cypress',
-            'aws',
-            'docker',
-            'jenkins',
-            'bash',
-            'xcode',
-            'git',
-          ].map((item) => (
+          {SKILLS.mbisolution.map((item) => (
             <Image
               key={item}
               src={ICON[item].src}
@@ -98,15 +65,7 @@ export default function Career() {
           2019.01 ~ 2019.08
         </Text>
         <Group mt={10}>
-          {[
-            'javascript',
-            'typescript',
-            'react',
-            'redux',
-            'webpack',
-            'yarn',
-            'git',
-          ].map((item) => (
+          {SKILLS.qualson.map((item) => (
             <Image
               key={item}
               src={ICON[item].src}
@@ -123,16 +82,7 @@ export default function Career() {
           2017.07 ~ 2018.10
         </Text>
         <Group mt={10}>
-          {[
-            'javascript',
-            'jquery',
-            'react',
-            'redux',
-            'npm',
-            'gulp',
-            'webpack',
-            'git',
-          ].map((item) => (
+          {SKILLS.mtechcrew.map((item) => (
             <Image
               key={item}
               src={ICON[item].src}
@@ -149,7 +99,7 @@ export default function Career() {
           2015.02 ~ 2016.03
         </Text>
         <Group mt={10}>
-          {['javascript', 'jquery', 'grunt', 'npm', 'git'].map((item) => (
+          {SKILLS.mtechcrew.map((item) => (
             <Image
               key={item}
               src={ICON[item].src}
@@ -166,17 +116,7 @@ export default function Career() {
           2013.12 ~ 2015.01
         </Text>
         <Group mt={10}>
-          {[
-            'javascript',
-            'nodejs',
-            'angularjs',
-            'bootstrap',
-            'jquery',
-            'npm',
-            'objectivec',
-            'xcode',
-            'git',
-          ].map((item) => (
+          {SKILLS.helloworld.map((item) => (
             <Image
               key={item}
               src={ICON[item].src}
