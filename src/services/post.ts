@@ -30,5 +30,13 @@ export async function getPosts() {
     });
 
   const posts = await Promise.all(postPromises);
-  return posts;
+  return posts.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1
+    }
+    if (a.date > b.date) {
+      return -1
+    }
+    return 0
+  });
 }
