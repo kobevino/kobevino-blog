@@ -9,7 +9,7 @@ import { Comments } from 'components/comments';
 import './markdown.css';
 
 export async function generateStaticParams() {
-  const entries = await readdir('./blog/', { withFileTypes: true });
+  const entries = await readdir('./public/', { withFileTypes: true });
   const dirs = entries
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name);
@@ -23,7 +23,7 @@ type Props = {
 };
 
 export default async function PostPage({ params: { slug } }: Props) {
-  const filename = `./blog/${slug}/index.md`;
+  const filename = `./public/${slug}/index.md`;
   const res = await readFile(filename, 'utf8');
   const { data, content } = matter(res);
   const { title, date } = data as IPost;
