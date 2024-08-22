@@ -47,8 +47,6 @@ export const SKILLS: { [key: string]: string[] } = {
   mtechcrew: [
     'javascript',
     'jquery',
-    'react',
-    'redux',
     'npm',
     'gulp',
     'webpack',
