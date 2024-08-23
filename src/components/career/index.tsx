@@ -99,7 +99,7 @@ export default function Career() {
           2015.02 ~ 2016.03
         </Text>
         <Group mt={10}>
-          {SKILLS.mtechcrew.map((item) => (
+          {SKILLS.nemusoft.map((item) => (
             <Image
               key={item}
               src={ICON[item].src}
