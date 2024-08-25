@@ -7,7 +7,7 @@ import {
   Stack,
   Text,
 } from '@mantine/core';
-import { IconMail, IconPhoneCall, IconSend2 } from '@tabler/icons-react';
+import { IconHandFingerLeft, IconMail, IconPhoneCall, IconSend2 } from '@tabler/icons-react';
 import Link from 'next/link';
 import styles from './index.module.css';
 
@@ -35,6 +35,7 @@ export function Profile() {
                 @kobevino
               </Badge>
             </Link>
+            <IconHandFingerLeft className={styles.finger} />
           </Group>
 
           <Group wrap="nowrap" gap={10} mt={3}>

@@ -22,3 +22,20 @@
     transform: rotate(-3deg); 
   }
 }
+
+.finger {
+  position: relative;
+  animation: wave ease-in-out .5s infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 5%;
+  }
+  100% {
+    left: 0;
+  }
+}
