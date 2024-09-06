@@ -3,6 +3,7 @@
 import {
   Anchor,
   Container,
+  Flex,
   Group,
   Switch,
   Text,
@@ -90,16 +91,18 @@ export function Header() {
     <header className={styles.header}>
       <Container size="md" className={styles.inner}>
         <Group gap={8} onClick={onHomeLink} className={styles.logo}>
-          <Image src={'/logo.png'} width={30} height={30} alt="logo" />
-          <Text
-            size="sm"
-            fw={700}
-            tt="uppercase"
-            c="gray"
-            className={styles.typing}
-          >
-            kobevino
-          </Text>
+          <Flex gap="xs" align="center">
+            <Image src={'/logo.png'} width={30} height={30} alt="logo" />
+            <Text
+              size="sm"
+              fw={700}
+              tt="uppercase"
+              c="gray"
+              className={styles.typing}
+            >
+              kobevino
+            </Text>
+          </Flex>
         </Group>
         <Group gap={5}>
           <Group mt={5} gap={5}>
