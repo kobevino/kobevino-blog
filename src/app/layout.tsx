@@ -34,7 +34,7 @@ export default function RootLayout({
       <body>
         <MantineProvider theme={theme} defaultColorScheme="auto">
           <Header />
-          <Container>{children}</Container>
+          <Container mt={100}>{children}</Container>
         </MantineProvider>
       </body>
     </html>

@@ -7,7 +7,12 @@ import {
   Stack,
   Text,
 } from '@mantine/core';
-import { IconHandFingerLeft, IconMail, IconPhoneCall, IconSend2 } from '@tabler/icons-react';
+import {
+  IconHandFingerLeft,
+  IconMail,
+  IconPhoneCall,
+  IconSend2,
+} from '@tabler/icons-react';
 import Link from 'next/link';
 import styles from './index.module.css';
 
