@@ -68,6 +68,10 @@ export const ICON: {
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg',
     alt: 'nextjs',
   },
+  nuxtjs: {
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuxtjs/nuxtjs-original.svg',
+    alt: 'nuxtjs',
+  },
   rollup: {
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rollup/rollup-original-wordmark.svg',
     alt: 'rollup',

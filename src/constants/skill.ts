@@ -1,4 +1,14 @@
 export const SKILLS: { [key: string]: string[] } = {
+  habitfactory: [
+    'javascript',
+    'typescript',
+    'nuxtjs',
+    'pnpm',
+    'yarn',
+    'docker',
+    'git',
+    'aws',
+  ],
   ncsoft: [
     'javascript',
     'typescript',
