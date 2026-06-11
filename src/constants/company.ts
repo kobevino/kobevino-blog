@@ -3,6 +3,24 @@ export const COMPANY = [
     uuid: 'habitfactory',
     name: 'Habit Factory',
     date: '2024.11 ~ Current',
+    resources: [
+      {
+        file: 'code-splitting.pdf',
+        text: 'code splitting',
+      },
+      {
+        file: 'infra-ecs.pdf',
+        text: 'Infrastructure with ECS',
+      },
+      {
+        file: 'micro-frontend.pdf',
+        text: 'Micro Frontend with Module Federation and S3',
+      },
+      {
+        file: 'alb-path-route.pdf',
+        text: 'ALB Path Route',
+      },
+    ],
   },
   {
     uuid: 'ncsoft',
